@@ -38,6 +38,45 @@
       "type_asset": "sdk.coin"
     },
     {
+      "description": "xDGN is liquid staked DGN, minted by the Dungeon Chain liquid staking hub. It accrues staking rewards through a rising exchange rate to DGN.",
+      "denom_units": [
+        {
+          "denom": "factory/dungeon1ff6n48czwwhmhhp85a9qsx6053fjat7rp6cezxrr876l924aaczssw74p2/xDGN",
+          "exponent": 0
+        },
+        {
+          "denom": "xDGN",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "sdk.coin",
+      "base": "factory/dungeon1ff6n48czwwhmhhp85a9qsx6053fjat7rp6cezxrr876l924aaczssw74p2/xDGN",
+      "name": "Liquid Staked DGN",
+      "display": "xDGN",
+      "symbol": "xDGN",
+      "traces": [
+        {
+          "type": "liquid-stake",
+          "counterparty": {
+            "chain_name": "dungeon",
+            "base_denom": "udgn"
+          },
+          "provider": "Dungeon Chain"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/xdgn.png"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/xdgn.png",
+          "theme": {
+            "circle": true
+          }
+        }
+      ]
+    },
+    {
       "description": "Bitcoin bridged to Dungeon Chain via the Crypto Dungeon FROST Taproot custody bridge (dnBTC).",
       "denom_units": [
         {
